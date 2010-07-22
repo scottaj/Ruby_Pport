@@ -1,0 +1,57 @@
+== Pport
+
+README
+------------------
+
+License
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-------------------------------------------------
+
+Description
+
+This is a ruby library for interfacing with a parallel port. It currently
+supports windows via the inpout32.dll library and linux via the /dev/port file.
+More platforms may be added in the future(or current platforms refined)
+if it is requested or someone else is motivated enough to do the work.
+--------------------------------------------
+
+Installation:
+
+Installation is done via the gem command:
+
+gem install Ruby_Pport
+
+    - Windows Requirements -
+
+        * To use the on microsoft windows you must have a copy of the inpout32
+          library availible on your system. You can find the DLL at:
+          http://logix4u.net/Legacy_Ports/Parallel_Port/Inpout32.dll_for_Windows_98/2000/NT/XP.html
+
+    - Linux Requirements -
+
+        * On linux you must run any program using this library as root or
+        another user who has read and write permissions to /dev/port.
+        !Please note, giving users read and write permissions to /dev/port can
+        be a serious security risk and should be done with caution!
+--------------------------------------------------
+
+CHANGELOG
+
+v0.1.1(current)
+    - Minor bug fix
+    - First git version
+
+v0.1.0
+    - Initial version
