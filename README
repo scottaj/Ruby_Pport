@@ -31,7 +31,9 @@ Installation:
 
 Installation is done via the gem command:
 
-gem install Ruby_Pport
+1) Download the .gem file from github
+
+2) # gem install Pport-versionnumber.gem
 
     - Windows Requirements -
 
