@@ -15,7 +15,7 @@
 
             <span class="ruby-ivar">@port</span> = <span class="ruby-keyword kw">nil</span>
 
-            <span class="ruby-keyword kw">if</span> <span class="ruby-constant">RUBY_PALTFORM</span>.<span class="ruby-identifier">match</span>(<span class="ruby-regexp re">/linux/i</span>)
+            <span class="ruby-keyword kw">if</span> <span class="ruby-constant">RUBY_PLATFORM</span>.<span class="ruby-identifier">match</span>(<span class="ruby-regexp re">/linux/i</span>)
                 <span class="ruby-ivar">@port</span> = <span class="ruby-constant">LinuxPport</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">address</span>)
             <span class="ruby-keyword kw">elsif</span> <span class="ruby-constant">RUBY_PLATFORM</span>.<span class="ruby-identifier">match</span>(<span class="ruby-regexp re">/mingw/i</span>) <span class="ruby-keyword kw">or</span> <span class="ruby-constant">RUBY_PLATFORM</span>.<span class="ruby-identifier">match</span>(<span class="ruby-regexp re">/mswin/i</span>)
                 <span class="ruby-ivar">@port</span> = <span class="ruby-constant">WinPport</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">address</span>)
