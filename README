@@ -31,11 +31,9 @@ Installation:
 
 Installation is done via the gem command:
 
-1) Download the .gem file from github
+1) run the command: #gem install Pport
 
-2) # gem install Pport-versionnumber.gem
-
-    - Windows Requirements -
+2)  - Windows Requirements -
 
         * To use the on microsoft windows you must have a copy of the inpout32
           library availible on your system. You can find the DLL at:
