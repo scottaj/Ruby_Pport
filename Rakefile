@@ -22,13 +22,14 @@ require 'rake/testtask'
 
 spec = Gem::Specification.new do |s|
   s.name = 'Pport'
-  s.version = '0.1.1'
+  s.version = '0.1.2'
   s.has_rdoc = true
   s.extra_rdoc_files = ['README', 'LICENSE']
   s.summary = 'A ruby extension for interfacing with a parallel port.'
   s.description = s.summary
   s.author = 'Al Scott'
   s.email = 'scottaj2@udmercy.edu'
+  s.homepage = 'http://github.com/scottaj/Ruby_Pport'
   # s.executables = ['your_executable_here']
   s.files = %w(LICENSE README Rakefile) + Dir.glob("{bin,lib,spec,samples}/**/*")
   s.require_path = "lib"
